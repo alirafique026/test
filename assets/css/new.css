@@ -1,0 +1,191 @@
+.content {
+    background        : url('../img/bg.jpeg') no-repeat center;
+    background-size   : cover;
+    display           : flex;
+    flex-direction    : row;
+    width             : 100vw;
+    height            : 100vh;
+    /* align-items    : center;
+    justify-content   : end; */
+    column-gap        : 8rem;
+    padding-top       : 12rem;
+    padding-left      : 10rem;
+    justify-content   : space-between;
+
+}
+
+@media (max-width: 600px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.one {
+    display       : flex;
+    flex-direction: column;
+    padding-bottom: 10rem;
+    row-gap       : 5rem;
+    width: 100%;
+    height: auto;
+}
+
+.two {
+    display: flex;
+    align-items: flex-end;
+    justify-items: flex-end;
+}
+
+.five {
+    display       : flex;
+    flex-direction: row;
+    column-gap    : 5rem;
+}
+
+.seven {
+    display       : flex;
+    flex-direction: column;
+    row-gap       : 2rem;
+
+}
+
+.logo-div {
+    width: fit-content;
+
+}
+
+.logo {
+    width     : 15.68rem;
+    max-height: fit-content;
+}
+
+.just-div {
+    width: fit-content;
+
+}
+
+.just {
+    width     : 18.68rem;
+    max-height: fit-content;
+}
+
+.line-div {
+    width: fit-content;
+
+}
+
+.line {
+    height   : 33.75rem;
+    max-width: fit-content;
+}
+
+
+.animated {
+    -webkit-animation-duration : 2s;
+    animation-duration         : 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode        : both;
+}
+
+@-webkit-keyframes fadeInRight {
+    0% {
+        opacity          : 0;
+        -webkit-transform: translateX(20px);
+    }
+
+    100% {
+        opacity          : 1;
+        -webkit-transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity  : 0;
+        transform: translateX(20px);
+    }
+
+    100% {
+        opacity  : 1;
+        transform: translateX(0);
+    }
+}
+
+.fadeInRight {
+    -webkit-animation-name: fadeInRight;
+    animation-name        : fadeInRight;
+}
+
+.hand {
+    /* height   : 65.4rem;
+    max-width: fit-content; 
+    width    : auto; */
+    width        : 37.3vw;
+    height       : auto;
+}
+
+.para {
+    min-width  : 33rem;
+    font-family: 'Arial';
+    color      : black;
+    font-size  : 22px;
+    line-height: 1.2em;
+
+}
+
+.btn-div {
+    width: fit-content;
+
+}
+
+.play {
+    width       : 11rem;
+    margin-right: 1rem;
+}
+
+.app {
+    width: 11rem;
+}
+
+
+@media (max-width: 1024px)
+{
+    .line {
+        height: 29.75rem;
+    }
+
+    .seven {
+        row-gap: 1rem;
+    }
+
+    .logo {
+        width: 13.68rem;
+    }
+
+    .just {
+        width: 16.68rem;
+    }
+
+    .para {
+        font-size: 20px;
+    }
+
+    .one {
+        row-gap: 4rem;
+    }
+
+    .five {
+        column-gap: 4rem;
+    }
+}
+
+@media (max-width: 768px)
+{
+    .content {
+        column-gap: 1rem;
+    }
+
+    .hand {
+        width: 48.3vw;
+    }
+}

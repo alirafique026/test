@@ -278,12 +278,14 @@
 .bg {
     background     : url('../img/new.jpg') no-repeat center;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 @media (max-width: 600px) {
     .bg {
         background     : url('../img/new.jpg') no-repeat center;
         background-size: cover;
+        background-attachment: fixed;
     }
 }
 
